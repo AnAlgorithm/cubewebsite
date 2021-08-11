@@ -1,0 +1,288 @@
+<html>
+
+<head>
+
+<title>Rubik's cubes</title>
+
+<link rel="icon" href="GoCube.jpg" sizes="32x32">
+
+<style>
+
+.header {
+background-color: cyan;
+padding: 10px;
+text-align: center;
+}
+
+.container {
+float: right;
+width: 100px;
+height: 50px;
+padding-top: 10px;
+display: inline-block;
+}
+
+.btn {
+font-size: 20px;
+}
+
+.middle {
+background-image: url('cubeach2.png');
+padding-top: 275px;
+padding-bottom: 275px;
+padding-right: 350px;
+padding-left: 350px;
+
+text-align: center;
+opacity: 0.9;
+color: white;
+background-size: cover;
+}
+
+.content {
+padding: 25px;
+background-color: black;
+opacity: 0.8;
+color: white;
+}
+
+.wrapper1 {
+padding: 50px;
+text-align: center;
+background-color:pink;
+opacity: 0.98;
+font-size: 17px;
+}
+
+.wrapper2 {
+padding: 50px;
+text-align: center;
+background-color:#00ccff;
+opacity: 0.98;
+font-size: 17px;
+}
+
+.wrapper3 {
+padding: 50px;
+text-align: center;
+background-color:#00ff66;
+opacity: 0.98;
+font-size: 17px;
+}
+
+.footer {
+ padding: 15px;
+ font-size: 20px;
+ background-color: #00ffaa;
+ text-align: center;
+}
+
+body {
+ border: 10px solid black;
+ font-family: consolas;
+}
+
+.paragraph-list {
+ font-size: 18px;
+}
+
+ol li {
+ padding: 0px;
+}
+
+.styled-table {
+ border-collapse: collapse;
+ margin: 25px;
+ font-size:20px;
+ min-width: 400px;
+ box-shadow: 0 0 20px rgba(0,0,0,.13);
+}
+
+thead tr {
+ background-color: #009970;
+ color: white;
+ text-align: center;
+}
+
+th,td {
+ padding: 12px 15px;
+}
+
+tr {
+ border-bottom: 1px solid #dadada;
+}
+
+tr: nth-of-type(even) {
+ background-color: #f9f9f9;
+}
+
+tr: last-of-type {
+ border-bottom: 2px solid #009970;
+}
+
+/* Active row */
+tr:hover {
+ font-weight: bold;
+ color: #ffffff;
+ background-color: 007099;
+}
+
+nav {
+ float: right;
+}
+
+nav ul {
+ margin: 0;
+ padding: 0;
+ list-style: none;
+}
+
+nav li {
+ display: inline-block;
+ margin-left: 64px;
+ margin-top: 4px;
+ padding-top: 6px;
+ padding-bottom: 6px;
+ padding-left: 6px;
+ padding-right: 6px;
+ position: relative;
+}
+
+nav a {
+ color: #202020;
+ text-decoration: none;
+ text-transform: none;
+ font-size: 25px;
+}
+
+nav a:hover {
+ color: #007099;
+}
+
+nav a::before {
+ content: ";
+ display: block;
+ height: 5px;
+ background-color: #202020
+ position: absolute;
+ top: 0;
+ width: 0%;
+ transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+ width: 100%;
+}
+
+.active {
+ background-color: #008080;
+ color: #ffffff;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+
+<div class="header">
+<img src="GoCube.jpg" height="50" width="50">
+
+<nav>
+<ul>
+ <li><a class="active" href="index.html">HOME</a></li>
+ <li><a target="_blank" href="about.html">ABOUT</a></li>
+ <li><a href="contact.html" target="_blank">CONTACT US</a></li>
+
+<div class="container">
+<button class="btn">Login</button>
+
+</ul></nav></div></div>
+
+<!-- Overview -->
+
+<div class="middle"><h1 class="content">Welcome to My site about Rubik's cubes!</h1></div>
+
+<div><p class="content" style="font-size:20px;">The Rubik's Cube is a 3-D 
+combination puzzle invented in 1974 by 
+Hungarian sculptor and professor of architecture
+ Ernő Rubik. Originally called the Magic Cube,
+ the puzzle was licensed by Rubik to be 
+sold by Ideal Toy Corp. in 1980 via 
+businessman Tibor Laczi and Seven Towns founder 
+Tom Kremer. Rubik's Cube won the 1980 German 
+Game of the Year special award for Best Puzzle.
+ As of January 2009, 350 million cubes had 
+been sold worldwide,
+making it the world's bestselling puzzle game
+ and bestselling toy.</p></div>
+
+
+<!-- Types of cubes -->
+
+<h1 style="text-align:center;background-color:yellow;margin-top:20px;margin-bottom:5px;padding:15px;font-size:43px;"><b>Types of Cubes</b></h1>
+<ol>
+
+<div class="wrapper3">
+<li><h2 style="font-size:30px;">Rubik's Cubes</h2>
+ <img src="https://cdn.shopify.com/s/files/1/0035/5205/1273/products/rubiksspeednobox_1024x1024@2x.jpg" height="410" width="525">
+
+ <p class="paragraph-list">The original Rubik's cubes were not so advanced. They were hard to turn, and frequently used to get stuck. While it is okay for a beginner, these types of cubes are not used for timed solves.</p>
+</li></div>
+
+<div class="wrapper2">
+<li><h2 style="font-size:30px;">Speed Cubes</h2>
+ <img src="https://cdn.shopify.com/s/files/1/0035/5205/1273/products/gan11problack_1024x1024@2x.jpg" height="410" width="430">
+
+ <p class="paragraph-list">Speed cubes are cubes designed for Cubing competitions, and are very smooth. They come black-stickered, white-stickered, stickerless and carbon-fiber, and range in sizes. Many companies have many cubes with different technology for advanced and smooth turning.</p>
+</li></div>
+
+<div class="wrapper1">
+<li><h2 style="font-size:30px;">Smart Cubes</h2>
+ <img src="gocube2.png" height="410" width="600">
+
+ <p class="paragraph-list">Smart cubes have advanced technology embedded in cubes, that can track and monitor the user's movements. Most can be connected to apps, and give a real-time status of the cube. They are bluetooth connected. The GoCube, GAN 356i, Rubik's connected and X-Mars cube are examples.</p>
+</li></div>
+
+</ol>
+
+<!-- Cubes to purchase -->
+
+<table border=1 border: 1px solid #959595 align="center">
+<th colspan=14 style="font-size:30px;">Best Cubes to purchase</th>
+
+<table class="styled-table">
+<thead>
+
+<tr>
+ <th colspan=4>Image</th>
+ <th colspan=4>Name</th>
+ <th colspan=4>Price</th>
+ <th colspan=4>Features</th>
+ <th colspan=3>Comes in</th>
+</tr></thead>
+
+<tr>
+ <td colspan=4><img src="https://cdn.shopify.com/s/files/1/0035/5205/1273/products/gan11problack_1024x1024@2x.jpg" alt="Gan M 11 Pro" height="200" width="210"></td>
+ <td colspan=4><b><h1 style="font-size:22px;">Gan M 11 Pro</h1></b></td>
+ <td colspan=4>$64<sup>99</sup> <h1 style="font-size: 17px;">+$5.00 with Lube Service</h1></td>
+ <td colspan=4><p style="font-size:17px;">Core-magnetic positioning system, dual adjustment system.</p></td>
+ <td colspan=3><p style="font-size:17px;">Frosted stickerless (black and primary internals)</p></td>
+</tr>
+
+<tr>
+ <td colspan=4><img src="https://cdn.shopify.com/s/files/1/0035/5205/1273/products/gan356xsblack1_1024x1024@2x.jpg" alt="Gan 356 XS" height="200" width="210"></td>
+ <td colspan=4><b><h1 style="font-size:22px;">Gan 356 </h1></b></td>
+ <td colspan=4>$43<sup>99</sup> <h1 style="font-size: 17px;">+$5.00 with Lube Service</h1></td>
+ <td colspan=4><p style="font-size:17px;">Adjustable Magnet System, Dual adjustment tension/compression system, All-plastic core.</p></td>
+ <td colspan=3><p style="font-size:17px;">Black and Stickerless</p></td>
+</tr>
+
+</table>
+
+<div class="footer"><b>To know more about Rubik's cubes, visit <a target="_blank" href="https://speedsolving.com">SpeedSolving</a></b></div>
+
+</body>
+</html>
