@@ -1,3 +1,3 @@
 # Cubewebsite
 A website about Rubik's Cubes.
-Open this page at ('analgorithm.github.io/cubewebsite')['analgorithm.github.io/cubewebsite']
+Open this page at [https://analgorithm.github.io/cubewebsite/](https://analgorithm.github.io/cubewebsite)
