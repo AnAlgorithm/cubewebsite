@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Contact us</title>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="icon" href="https://raw.githubusercontent.com/AnAlgorithm/cubewebsite/gh-pages/images/GoCube.jpg" sizes="32x32">
+
+<style>
+
+* {
+ box-sizing: border-box;
+ outline: none;
+ font-family: "Comfortaa", consolas;
+}
+
+.icon {
+ float: left;
+ padding: 10px;
+ height: 50px;
+ width: 50px;
+}
+
+body {
+ background-image: url('https://raw.githubusercontent.com/AnAlgorithm/cubewebsite/gh-pages/images/digit.png');
+ background-repeat: no-repeat;
+ background-attachment: fixed;  
+ background-size: cover;
+}
+
+.wrapper {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ max-width: 350px;
+ width: 100%;
+ background: #22ffff
+ padding: 25px;
+ border:radius: 5px;
+}
+
+.wrapper h2 {
+ text-align: center;
+ margin-bottom: 20px;
+ text-transform: uppercase;
+ letter-spacing: 3px;
+ color: #22ffff;
+}
+
+.wrapper .input_field {
+ margin-bottom: 10px;
+}
+
+.wrapper .input-field input[type="text"], .wrapper textarea {
+ border: 1px solid #e0e0e0;
+ width: 100%;
+ padding: 10px;
+}
+
+.wrapper textarea {
+ resize: none;
+ height: 80px;
+}
+
+.wrapper .btn input[type="submit"] {
+ border: 0px;
+ margin-top: 15px;
+ padding: 10px;
+ text-align: center;
+ width: 100%;
+ background: #00cccc;
+ opacity: 0.88;
+ color: #332902;
+ text-transform: uppercase;
+ letter-spacing: 5px;
+ font-weight: bold;
+ border-radius: 25px;
+ cursor: pointer;
+}
+
+#error_message {
+ margin-top: 20px;
+ margin-bottom: 20px;
+ background: #ff6060;
+ padding: 0px;
+ text-align: center;
+ font-size: 20px;
+ transition: all 0.5s ease;
+}
+
+</style>
+
+<meta charset="UTF-8">
+
+<script>
+
+function validate() {
+
+var name1 = document.getElementById("name").value;
+var phone1 = document.getElementById("phone").value;
+var email1 = document.getElementById("email").value;
+var message1 = document.getElementById("message").value;
+
+if (name1.length < 5) {
+ text = "Please Enter Your Full Name";
+ error_message.innerHTML=text;
+ return false;
+}
+
+if (email1.indexOf("@")==-1 || email1.length < 6 || email1.indexOf(".")==-1) {
+ text = "Please Enter A Valid Email Id";
+ error_message.innerHTML=text;
+ return false;
+}
+
+if (isNaN(phone1) || phone1.length!=10) {
+ text = "Please Enter A Valid Phone No";
+ error_message.innerHTML=text;
+ return false;
+}
+
+if (message1.length > 120) {
+ x = message1.length - 120;
+ text="Message Exceeded Limit by " + x + " Characters";
+ error_message.innerHTML=text;
+ return false;
+}
+
+alert ("Form Submitted Successfully");
+return true;
+}
+</script>
+</head>
+
+<body>
+
+<div class="icon">
+ <a href="https://analgorithm.github.io/cubewebsite"><img src="https://raw.githubusercontent.com/AnAlgorithm/cubewebsite/gh-pages/images/GoCube.jpg" width="50px" height="50px"></a></div>
+
+<div class="wrapper">
+<h2> <i class="material-icons" style="display:inline-block;">&#xe8a8;</i> Contact Us </h2>
+
+<form id="myform" onsubmit="return validate();">
+
+<div class="input_field">
+<input type="text" placeholder="Name" id="name">
+</div>
+
+<div class="input_field">
+<input type="text" placeholder="Phone" id="phone">
+</div>
+
+<div class="input_field">
+<input type="text" placeholder="Email" id="email">
+</div>
+
+<div class="input_field">
+<textarea placeholder="Message" id="message"></textarea>
+</div>
+
+<div class="btn">
+<input type="submit">
+</div>
+
+<div id="error_message"></div>
+</form>
+
+</div>
+</body>
+</html>
